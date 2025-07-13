@@ -1,31 +1,33 @@
+// src/lib/site-config.ts
 import { env } from '@/env.mjs';
 
 export const siteConfig = {
-  title: 'Michał Skolak | Front-end developer',
+  // Browser tab title
+  title: 'Palak Gupta | Cybersecurity Student',
+
+  // Meta description (shown in search results, social shares, etc.)
   description:
-    "Hello, I'm Michał. I am front-end developer from Poland. I enjoy building sites and apps. My focus is React (Next.js).",
+    "Hello! I'm Palak Gupta, currently pursuing my M.S. in Cybersecurity at Northeastern University. I specialize in risk management, SOC operations, digital forensics, and security best practices.",
+
+  // SEO keywords
   keywords: [
-    'Michał Skolak',
-    'Front-end developer',
-    'Poland',
-    'React',
-    'Next.js',
-    'Web development',
-    'Front-end',
-    'UI/UX',
-    'Responsive design',
-    'JavaScript',
-    'HTML',
-    'CSS',
-    'Portfolio',
-    'Projects',
-    'Website',
-    'Web applications',
-    'Developer',
-    'Code',
-    'Programming',
-    'Tech enthusiast',
+    'Palak Gupta',
+    'Cybersecurity',
+    'Northeastern University',
+    'Risk Management',
+    'SOC Operations',
+    'Digital Forensics',
+    'Python',
+    'C++',
+    'SQL',
+    'Bash Scripting',
+    'InfoSec',
+    'Network Security',
   ],
-  url: env.SITE_URL || 'https://example.com',
+
+  // Your canonical site URL
+  url: env.SITE_URL || 'https://your-domain.com',
+
+  // (Optional) Google Search Console verification
   googleSiteVerificationId: env.GOOGLE_SITE_VERIFICATION_ID || '',
 };

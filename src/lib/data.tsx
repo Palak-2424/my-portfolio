@@ -1,79 +1,64 @@
 import { Icons } from '@/components/icons';
 
 export const links = [
-  {
-    name: 'Home',
-    hash: '#home',
-  },
-  {
-    name: 'About',
-    hash: '#about',
-  },
-  {
-    name: 'Experience',
-    hash: '#experience',
-  },
-  {
-    name: 'Projects',
-    hash: '#projects',
-  },
-  {
-    name: 'Contact',
-    hash: '#contact',
-  },
+  { name: 'Home', hash: '#home' },
+  { name: 'About', hash: '#about' },
+  { name: 'Experience', hash: '#experience' },
+  { name: 'Projects', hash: '#projects' },
+  { name: 'Blog', hash: '#blog' },
+  { name: 'Certifications', hash: '#certifications' },
+  { name: 'Publications', hash: '#publications' },
+  { name: 'Contact', hash: '#contact' },
 ] as const;
 
 export const projectsData = [
   {
-    image: '/images/project-2.webp',
-    title: 'Next-starter',
+    image: '/images/soc-home-lab.png', // You can update this with your own image
+    title: 'SOC Home Lab (UTM-based)',
     description:
-      'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
-    technologies: ['Next.js', 'Tailwind', 'Shadcn/ui', 'Next-auth', 'Prisma'],
+      'Built a virtual SOC environment using UTM virtual machines. Integrated Suricata IDS and Splunk SIEM for real-time attack detection and alert correlation.',
+    technologies: ['Suricata', 'Splunk', 'UTM', 'Linux', 'Cybersecurity'],
     links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
+      preview: 'https://github.com/Palak-2424/SOC-Home-Lab-UTM', // No live preview, so GitHub as fallback
+      github: 'https://github.com/Palak-2424/SOC-Home-Lab-UTM',
+      githubApi: 'https://api.github.com/repos/Palak-2424/SOC-Home-Lab-UTM',
     },
   },
   {
-    image: '/images/project-1.webp',
-    title: 'SocialHub',
+    image: '/images/suricata-dashboard.png',
+    title: 'Suricata + Splunk SOC Dashboard',
     description:
-      'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
-    technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
+      'Created a custom SOC dashboard to visualize and analyze IDS alerts from Suricata using Splunk. Simulated Nmap scans and detected events with custom rules.',
+    technologies: ['Splunk', 'Suricata', 'Dashboards', 'IDS', 'SIEM'],
     links: {
-      preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
-      githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
+      preview: 'https://github.com/Palak-2424/suricata-splunk-soc-lab',
+      github: 'https://github.com/Palak-2424/suricata-splunk-soc-lab',
+      githubApi:
+        'https://api.github.com/repos/Palak-2424/suricata-splunk-soc-lab',
     },
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: 'Web developer intern',
-    company: 'WEB-BOX, Tarnobrzeg PL',
+    title: 'Teaching Assistant, CS5700/CS4700 Fundamentals of Networking',
+    company: 'Northeastern University',
     description:
-      'During this internship, I focused on two key areas: creating Wordpress plugins and managing website content, plugins, and settings.',
-    period: '2023',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Wordpress'],
+      'Selected as TA under Professor Alden Jackson. Assisted students with lab exercises, graded assignments, and helped students in understanding core networking concepts.',
+    period: 'May 2025 – Present',
+    technologies: ['Networking Fundamentals', 'Instruction', 'Lab Assistance'],
   },
   {
-    title: 'Frontend developer intern',
-    company: 'Chop-chop, remote',
+    title: 'Operational Lead',
+    company: 'Bitosa Global, New Delhi, India',
     description:
-      'During my internship at Chop-Chop, I collaborated with an experienced IT team, focusing on tasks in Next.js. This experience provided valuable insights into teamwork and advanced my proficiency in Next.js.',
-    period: '2024',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
-  },
-  {
-    title: 'Frontend developer',
-    company: 'Freelancing, remote',
-    description:
-      'As a freelancer, I specialized in graphic design using Figma and website development using Next.js with Sanity CMS. I undertook projects independently, from design conceptualization to final implementation, ensuring client satisfaction.',
-    period: '2023 - present',
-    technologies: ['Next.js', 'TypeScript', 'Sanity', 'Tailwind'],
+      'Organized alumni networking events, boosting engagement by 30%. Trained team members on cybersecurity best practices, such as secure file sharing and phishing detection. Coordinated with diverse teams to achieve organizational goals, strengthening leadership and communication skills.',
+    period: 'April 2023 – May 2024',
+    technologies: [
+      'Alumni Engagement',
+      'Phishing Detection',
+      'Team Leadership',
+    ],
   },
 ] as const;
 
