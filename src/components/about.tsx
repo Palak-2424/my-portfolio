@@ -26,7 +26,7 @@ export const About = () => {
       {/* Centered Photo */}
       <div className="relative mb-8 mt-4 h-96 w-80 flex-none overflow-hidden rounded-2xl border-2 border-gray-300">
         <Image
-          src="/palak.jpg"
+          src="/Palak.jpg"
           alt="Palak Gupta"
           fill
           className="object-cover"
